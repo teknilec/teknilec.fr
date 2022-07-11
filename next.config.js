@@ -22,6 +22,7 @@ const nextConfig = {
     eslint: {
         dirs: ['pages', 'components']
     },
+    trailingSlash: true,
 }
 
 module.exports = nextConfig

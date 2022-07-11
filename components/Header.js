@@ -1,15 +1,11 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import React from "react";
-import ExportedImage from "next-image-export-optimizer";
-
 import CustomLink from "./CustomLink";
 
 const Header = () => {
-
-
     return (
         <>
             <nav
@@ -45,10 +41,10 @@ const Header = () => {
                                 <CustomLink className="nav-link me-lg-3" href="/solutions">Solutions</CustomLink>
                             </li>
                             <li className="nav-item">
-                                <CustomLink className="nav-link me-lg-3" href="/services">Services</CustomLink>
+                                <CustomLink className="nav-link me-lg-3" href="/realisations">Réalisations</CustomLink>
                             </li>
                             <li className="nav-item">
-                                <CustomLink className="nav-link me-lg-3" href="/realisations">Réalisations</CustomLink>
+                                <CustomLink className="nav-link me-lg-3" href="/carrieres">Carrières</CustomLink>
                             </li>
                             <li className="nav-item">
                                 <CustomLink className="nav-link me-lg-3" href="/contact">Contact</CustomLink>

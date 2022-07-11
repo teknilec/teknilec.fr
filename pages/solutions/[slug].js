@@ -1,11 +1,13 @@
-import React from "react";
+import { useRouter } from 'next/router'
+import React from 'react'
 
-const Solutions = () => {
+const Solution = ({ }) => {
+    const router = useRouter()
+
     return (
-        <div className="container">
-            <h1 className="text-center">Nos solutions</h1>
-
+        <>
             <h2>{"SSI (système de sécurité incendie)"}</h2>
+            <h3>{router.query.slug}</h3>
 
             <div className="row">
                 <div className="row">
@@ -57,10 +59,9 @@ const Solutions = () => {
                         </ul>
                     </div>
                 </div>
-
             </div>
-        </div>
-    );
-};
+        </>
+    )
+}
 
-export default Solutions;
+export default Solution

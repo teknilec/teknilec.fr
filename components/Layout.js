@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ children }) => {
+
+    // useEffect(() => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth'
+    //     });
+    // }, [])
+
     return (
         <>
             <Header />

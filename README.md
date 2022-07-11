@@ -23,3 +23,9 @@ yarn build
 ```
 yarn start
 ```
+
+# TODO
+
+-   [ ] add complete bootstrap
+-   [ ] getStaticProps
+-   [ ] s

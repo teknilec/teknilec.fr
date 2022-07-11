@@ -1,14 +1,15 @@
-import "./../assets/fonts/fonts.scss";
-import "./../assets/styles/startbootstrap-new-age.css";
+// import "./../assets/fonts/fonts.scss";
+import "./../assets/styles/startbootstrap-new-age/index.scss";
 import "./../assets/styles/custom.scss";
 
 import { useEffect } from 'react'
 import Layout from '../components/Layout';
 import Head from 'next/head'
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
     useEffect(() => {
         import("bootstrap/dist/js/bootstrap");
+        import("./../assets/styles/startbootstrap-new-age/scripts")
     }, []);
 
     return (

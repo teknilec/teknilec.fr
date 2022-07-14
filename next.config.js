@@ -1,4 +1,5 @@
 const path = require('path')
+const yaml = require('yamljs');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -23,6 +24,18 @@ const nextConfig = {
         dirs: ['pages', 'components']
     },
     trailingSlash: true,
+    webpack: (config) => {
+        // adding a yaml loader
+        config.module.rules.push({
+            test: /\.(ya|y)ml$/i,
+            type: 'json',
+            parser: {
+                parse: yaml.parse,
+            },
+        })
+
+        return config
+    }
 }
 
 module.exports = nextConfig
